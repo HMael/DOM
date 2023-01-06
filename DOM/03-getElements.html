@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon super titre</title>
+</head>
+<body>
+
+<p id="super-id">
+    Mon super contenu récupéré par ID
+</p>
+
+<p class="class-cool">
+    Mon super contenu récupéré par la classe
+</p>
+
+<a>
+    Mon super contenu récupéré par le tag section
+</a>
+
+<a class="class-cool">
+    voilà voilà
+</a>
+
+<!--- À appeler dans un js à part --->
+<script type="text/javascript">
+     let elementById = document.getElementById("super-id")
+     let elementsByClass = document.getElementsByClassName("class-cool")
+     let elementsByTag = document.querySelector("a")
+     
+
+    console.log("-----------------------------------");
+    console.log(" :");
+    console.log(elementById);
+    console.log("-----------------------------------");
+    console.log("Afficher grâce à la class :");
+    console.log(elementsByClass);
+    console.log("-----------------------------------");
+    console.log("Afficher grâce à au tag :");
+    console.log(elementsByTag);
+    console.log("-----------------------------------");
+
+    let superId = document.querySelector("super-id")
+    let classCool = document.querySelector("p.class-cool")
+    let A = document.querySelector("a")
+
+    console.log(superId)
+    console.log(classCool)
+    console.log(A)
+   
+
+    console.log(superId.parentNode);
+</script>
+</body>
+</html>
